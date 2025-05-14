@@ -1,1 +1,84 @@
 @import "tailwindcss";
+
+
+
+
+/* SLIDER SECTION */
+
+:root {
+  --width: 300px;
+  --height: 200px;
+  --quantity: 8;
+}
+
+
+.slider-cont {
+  width: 100%;
+  /* border: 1px solid red; */
+  height: var(--height);
+  width: 90%;
+  margin: 20px auto;
+  overflow: hidden;
+  mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 10% 90%,
+      transparent
+  );
+}
+
+.slider-cont .list-cont {
+  display: flex;
+  width: 100%;
+  min-width: calc( var(--width) *  var(--quantity));
+  position: relative;
+}
+
+.slider-cont .list-cont .items-cont {
+  --seconds: 10s;
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  left: 100%;
+  animation: autorun var(--seconds) linear infinite;
+  transition: filter 0.5;
+  animation-delay: calc( (var(--seconds) / var(--quantity)) * (var(--position) - 1));
+}
+
+.slider-cont .list-cont .items-cont img {
+  width: 100%;
+  height: var(--height);
+  object-fit: cover;
+}
+
+.slider-cont:hover .items-cont,
+.slider-cont:active .items-cont {
+  animation-play-state: paused!important;
+  filter: grayscale(1);
+}
+.slider-cont .items-cont:hover,
+.slider-cont .items-cont:hover {
+  filter: grayscale(0);
+}
+
+.slider-cont[reverse="true"] .items-cont {
+  --seconds: 15s;
+  animation: reversePlay var(--seconds) linear infinite;
+  animation-delay: calc( (var(--seconds) / var(--quantity)) * (var(--position) - 1))
+}
+
+@keyframes autorun {
+  from {
+      left: 100%;
+  } to {
+      left: calc(var(--width) * -1);
+  }
+}
+
+@keyframes reversePlay {
+  from{
+      left: calc(var(--width) * -1);
+  } to {
+      left: 100%;
+  }
+}

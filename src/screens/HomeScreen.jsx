@@ -1,10 +1,16 @@
-
+import HeroSection from "../components/homePage-Components/heroSection";
+import SectionTwo from "../components/homePage-Components/SectionTwo";
+import SectionThree from "../components/homePage-Components/SectionThree";
+import OurProducts from "../components/homePage-Components/OurProducts";
 
 
 function HomeScreen() {
   return (
     <>
-      <div className="text-blue-400 text-2xl">Hello World Welcome</div>
+        <HeroSection />
+        <SectionTwo />
+        <SectionThree />
+        <OurProducts />
     </>
   );
 }

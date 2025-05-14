@@ -42,7 +42,7 @@ function Header() {
             </Link>
           </nav>
 
-          <div className="cursor-pointer nav-mobile p-2 rounded-md hover:bg-gray-200 *:w-4 *:h-0.5 *:bg-white space-y-1 md:hidden">
+          <div className="cursor-pointer nav-mobile p-2 rounded-md hover:bg-gray-200 *:w-4 *:h-0.5 *:bg-white space-y-1 md:hidden" onClick={openMobileNav}>
             <div></div>
             <div></div>
             <div></div>
@@ -79,10 +79,10 @@ function Header() {
   );
 }
 
-document.querySelector('.nav-mobile').addEventListener("click", function () {
+const openMobileNav = function () {
     const menu = document.querySelector('#menu');
     menu.classList.toggle('h-0');
     menu.classList.toggle('p-2');
-});
+};
 
 export default Header;

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
-      <footer className="absolute bottom-0 inset-x-0 border-t border-gray-800">
+      <footer className="border-t border-gray-800">
         <div className="py-16 bg-gradient-to-b from-gray-900 to-gray-950 px-4 md:px-8 lg:px-12 flex flex-wrap gap-10 justify-between">
           <div className="max-w-[300px]">
             <div className="logo flex pb-4">
