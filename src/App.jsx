@@ -1,18 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route } from "react-router-dom";
+import HomeScreen from "./screens/HomeScreen";
+import ContactScreen from "./screens/ContactUs";
+import AboutScreen from "./screens/AboutScreen";
+import "./App.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <button className='border border-red-500 bg-red-600 mt-[25%] mx-auto block text-white font-bold px-4 py-2' onClick={() => setCount((count) => count + 1)}>
-        count is {count}
-      </button>
+      <Header />
+      <div className="app">
+        <Routes>
+          <Route path="/" element={<HomeScreen />} />
+          <Route path="/about" element={<AboutScreen />} />
+          <Route path="/contact" element={<ContactScreen />} />
+        </Routes>
+      </div>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
