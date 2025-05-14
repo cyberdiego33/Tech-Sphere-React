@@ -1,11 +1,19 @@
-
+import AboutHero from "../components/AboutPage-Components/AboutHero";
+import OurMission from "../components/AboutPage-Components/OurMission";
+import CreativeCrew from "../components/homePage-Components/creativeCrew";
+import ReadySection from "../components/AboutPage-Components/ReadySection";
+import FAQ from "../components/AboutPage-Components/FAQ";
 
 
 function AboutScreen() {
     return (
-        <>
-            <div className="text-blue-400 text-2xl">Hello World About Us</div>
-        </>
+        <main>
+            <AboutHero />
+            <OurMission />
+            <CreativeCrew />
+            <ReadySection />
+            <FAQ />
+        </main>
     )
 }
 

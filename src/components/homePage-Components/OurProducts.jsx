@@ -43,7 +43,7 @@ const OurProducts = function () {
       <div class="slider-cont">
         <div class="list-cont">
           {SliderAPI.map(function (item, index) {
-            return <SlidingImage  position={item.position} />;
+            return <SlidingImage position={item.position} />;
           })}
         </div>
       </div>
