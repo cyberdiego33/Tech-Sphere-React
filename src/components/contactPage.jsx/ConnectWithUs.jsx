@@ -1,0 +1,49 @@
+import shield from "../../assets/images/shield.png";
+
+
+const ConnectWithUs = function () {
+  return (
+    <section className="py-16 px-4 bg-gray-950 relative">
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-blue-700  to-transparent opacity-40"></div>
+
+      <div className="container mx-auto max-w-5xl relative z-10">
+        <div className="grid md:grid-cols-2 gap-12">
+          <div className="p-8 bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-sm border border-gray-700">
+            <div className="mb-6 size-7 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full">
+              <img src={shield} alt="chat logo" />
+            </div>
+
+            <h2 className="text-2xl font-bold text-white mb-6">Connect with Us</h2>
+            <p className="text-gray-400 mb-8">
+              Have questions about our services? We're here to help you succeed
+            </p>
+
+            <div className="space-y-6">
+              <div className="flex items-center p-4 bg-gray-800/50 rounded-lg border border-gray-700 hover:bg-gray-800 hover:border-blue-500 group transition-all">
+                <div className="p-3 size-4 rounded-full mr-4 bg-blue-600/20 group-hover:bg-blue-600/30 transition-colors"></div>
+                <div>
+                  <p className="text-sm text-gray-500">Email Us At</p>
+                  <a
+                    className="text-gray-300 font-medium hover:text-blue-400 transition-colors"
+                    href="#"
+                  >
+                    techsphere@gmail.com
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-8 bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-sm border border-gray-700">
+            <div className="mb-6 size-7 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full">
+              <img src={shield} alt="chat logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+
+export default ConnectWithUs;

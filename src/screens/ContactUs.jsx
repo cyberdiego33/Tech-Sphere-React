@@ -1,11 +1,13 @@
-
+import ContactHero from "../components/contactPage.jsx/ContactHero";
+import ConnectWithUs from "../components/contactPage.jsx/ConnectWithUs";
 
 
 function ContactScreen() {
     return (
-        <>
-            <div className="text-blue-400 text-2xl">Hello World Contact Us</div>
-        </>
+        <main>
+            <ContactHero />
+            <ConnectWithUs />
+        </main>
     )
 }
 

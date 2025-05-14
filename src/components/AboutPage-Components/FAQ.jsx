@@ -54,7 +54,7 @@ const FAQ = function () {
 
             <div className="flex bg-black items-center hover:cursor-pointer group" onClick={RevealAnswer}>
               <div className="bg-blue-600/20 p-2 px-4 rounded-full mr-4 group-hover:bg-blue-600/30 group-hover:cursor-pointer hover:pointer transition-colors" onClick={RevealAnswer}>
-                >
+                1
               </div>
               <h3 className="font-semibold text-white mb-2 group-hover:text-blue-400 group-hover:cursor-pointer transition-colors">
                 How quickly will I receive a response?
