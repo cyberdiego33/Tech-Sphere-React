@@ -37,10 +37,9 @@ const QuestionCard = function (props) {
       <div className="p-6 bg-gradient-to-bl from-gray-800 to-gray-900 rounded-xl border border-gray-700 group transition hover:border-blue-500 hover:shadow-blue-600/5 hover:shadow-xl">
         <div
           className="flex items-center hover:cursor-pointer group"
-          onClick={RevealAnswer}>
-          <div
-            className="bg-blue-600/20 p-2 px-4 rounded-full mr-4 group-hover:bg-blue-600/30 group-hover:cursor-pointer hover:pointer transition-colors"
-          >
+          onClick={RevealAnswer}
+        >
+          <div className="bg-blue-600/20 p-2 px-4 rounded-full mr-4 group-hover:bg-blue-600/30 group-hover:cursor-pointer hover:pointer transition-colors">
             {props.index}
           </div>
           <h3 className="font-semibold text-white mb-2 group-hover:text-blue-400 group-hover:cursor-pointer transition-colors">
@@ -61,27 +60,15 @@ const QuestionCard = function (props) {
 const RevealAnswer = function (event) {
   const clicked = event.currentTarget;
   const answer = clicked.nextElementSibling;
+  const revealItems = document.querySelectorAll(".OnclickReveal");
+  revealItems.forEach(function (items) {
+    items.classList.add("h-0");
+  });
 
   if (answer && answer.classList.contains("OnclickReveal")) {
     answer.classList.toggle("h-0");
-    // answer.classList.toggle("py-4"); // optional spacing
   }
 };
-
-// const RevealAnswer = function () {
-//   const revealItems = document.querySelectorAll(".OnclickReveal");
-//   revealItems.forEach(function (items) {
-//     items.classList.toggle("h-0");
-//   });
-// };
-
-// const RevealAnswer = function() {
-//   const answer = this.nextElementSibling;
-//   if (answer && answer.classList.contains("OnclickReveal")) {
-//     answer.classList.toggle("h-0");
-//     // answer.classList.toggle("py-4"); // Optional padding when visible
-//   }
-// }
 
 const FAQ = function () {
   return (
