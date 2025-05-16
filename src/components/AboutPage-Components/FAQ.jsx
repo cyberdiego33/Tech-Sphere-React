@@ -47,7 +47,7 @@ const QuestionCard = function (props) {
           </h3>
         </div>
 
-        <div className="OnclickReveal pl-14 overflow-hidden h-0">
+        <div className="OnclickReveal remover pl-14 overflow-hidden h-0">
           <p className="text-gray-400 group-hover:text-gray-300">
             {props.answer}
           </p>
@@ -66,7 +66,11 @@ const RevealAnswer = function (event) {
   });
 
   if (answer && answer.classList.contains("OnclickReveal")) {
-    answer.classList.toggle("h-0");
+    answer.classList.remove("h-0");
+    answer.classList.remove("OnclickReveal");
+  } else if (answer && !answer.classList.contains("OnclickReveal")){
+    answer.classList.add("h-0");
+    answer.classList.add("OnclickReveal");
   }
 };
 
