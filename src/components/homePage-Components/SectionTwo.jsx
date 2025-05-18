@@ -2,7 +2,7 @@ import webDevelopmentImage from "../../assets/images/section-2/web-development-t
 import graphicsImage from "../../assets/images/section-2/graphics-design-4.jpg";
 import successQuote from "../../assets/images/section-2/success-quotes.jpg";
 import testedIcon from "../../assets/images/section-2/texted.png";
-
+import NINImage from "../../assets/images/section-2/NIN-image.jpg"
 
 
 
@@ -92,7 +92,7 @@ const SectionTwo = function() {
               <div className="card-image h-[200px] w-[300px] rounded-md">
                 <img
                   className="size-full object-cover rounded-md"
-                  src={successQuote}
+                  src={NINImage}
                   alt=""
                 />
               </div>
