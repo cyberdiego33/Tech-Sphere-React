@@ -1,5 +1,6 @@
 import shieldIcon from "../assets/images/shield.png"
 import { Link } from "react-router-dom";
+import techSphereLogo from "../assets/images/logo-tech-sphere-removebg-preview.png";
 
 function Header() {
   return (
@@ -8,7 +9,7 @@ function Header() {
         <div className="navigation flex justify-between items-center p-3 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 border-b border-gray-800 shadow-lg backdrop-blur-sm md:px-6 relative">
           <div className="logo flex">
             <div className="size-8 mr-2">
-              <img src={shieldIcon} alt="logo icon" />
+              <img src={techSphereLogo} alt="logo icon" className="object-cover size-full object-center" />
             </div>
             <p className="text-white font-bold text-xl">Tech Sphere</p>
           </div>
