@@ -1,6 +1,6 @@
 const AboutHero = function() {
     return (
-        <section id="hero-section" className="relative bg-gradient-to-r
+        <section id="hero-section" className="relative mt-[55px] bg-gradient-to-r
         from-[#0f172a] via-[#312e81] to-[#0f172a]
     ">
             <div id="hero-conatiner" className="py-20 px-5 md:px-10 relative z-5">
