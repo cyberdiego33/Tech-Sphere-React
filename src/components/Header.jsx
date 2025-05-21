@@ -1,6 +1,5 @@
-import shieldIcon from "../assets/images/shield.png"
 import { Link } from "react-router-dom";
-import techSphereLogo from "../assets/images/logo-tech-sphere-removebg-preview.png";
+import techSphereLogo from "../assets/images/logo-tech-sphere.png";
 
 function Header() {
   return (

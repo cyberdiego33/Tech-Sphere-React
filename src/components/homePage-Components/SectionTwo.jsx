@@ -1,7 +1,7 @@
 import webDevelopmentImage from "../../assets/images/section-2/web-development-thumbnail.jpg"
 import graphicsImage from "../../assets/images/section-2/graphics-design-4.jpg";
 import successQuote from "../../assets/images/section-2/success-quotes.jpg";
-import testedIcon from "../../assets/images/section-2/texted.png";
+import techSphereLogo from "../../assets/images/logo-tech-sphere.png";
 import NINImage from "../../assets/images/section-2/NIN-image.jpg"
 
 
@@ -15,9 +15,9 @@ const SectionTwo = function() {
 
         <div className="text-center max-w-3xl mx-auto">
           <div
-            className="size-8 mx-auto mb-5 bg-gradient-to-r from-blue-600 to-purple-700 rounded-full"
+            className="size-8 mx-auto mb-5 rounded-full"
           >
-            <img src={testedIcon} alt="tested icon" />
+            <img src={techSphereLogo} alt="tested icon" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-white">
             What Tech Sphere Does Best

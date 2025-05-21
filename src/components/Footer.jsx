@@ -1,4 +1,4 @@
-import ShieldIcon from '../assets/images/shield.png'
+import techSphereLogo from "../assets/images/logo-tech-sphere.png";
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -9,7 +9,7 @@ function Footer() {
           <div className="max-w-[300px]">
             <div className="logo flex pb-4">
               <div className="size-8 mr-2">
-                <img src={ShieldIcon} alt="logo icon" />
+                <img src={techSphereLogo} alt="logo icon" />
               </div>
               <p className="text-white font-bold text-xl">Tech Sphere</p>
             </div>

@@ -1,4 +1,4 @@
-import testedIcon from "../../assets/images/section-2/texted.png";
+import techSphereLogo from "../../assets/images/logo-tech-sphere.png";
 
 const SectionThree = function () {
   return (
@@ -11,8 +11,8 @@ const SectionThree = function () {
 
       <div className="relative px-8 z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="size-8 mx-auto mb-5 bg-gradient-to-r from-blue-600 to-purple-700 rounded-full">
-            <img src={testedIcon} alt="tested icon" />
+          <div className="size-8 mx-auto mb-5 rounded-full">
+            <img src={techSphereLogo} alt="tested icon" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-white">
             Start Your Project With Tech Sphere
