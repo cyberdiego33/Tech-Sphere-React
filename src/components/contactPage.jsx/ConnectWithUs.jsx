@@ -1,23 +1,24 @@
-import shield from "../../assets/images/shield.png";
+import techSphereLogo from "../../assets/images/logo-tech-sphere.png";
+import { TfiEmail } from "react-icons/tfi";
 
 const SocialsApi = [
   {
     index: 1,
     socialMedia: "Email Us At",
     socialHandle: "techsphere@gmail.com",
-    socialIcon: shield,
+    socialIcon: TfiEmail,
   },
   {
     index: 2,
     socialMedia: "Connect With Us At",
     socialHandle: "techsphere@LinkedIn.com",
-    socialIcon: shield,
+    socialIcon: TfiEmail,
   },
   {
     index: 3,
     socialMedia: "Follow Us At",
     socialHandle: "techsphere@Twitter.com",
-    socialIcon: shield,
+    socialIcon: TfiEmail,
   },
 ];
 
@@ -26,7 +27,7 @@ const Socials = function (props) {
     <div className="space-y-6 mb-4">
       <div className="flex items-center p-4 bg-gray-800/50 rounded-lg border border-gray-700 hover:bg-gray-800 hover:border-blue-500 group transition-all">
         <div className="p-3 size-4 rounded-full mr-4 bg-blue-600/20 group-hover:bg-blue-600/30 transition-colors">
-          <img src={props.socialName} alt="" />
+          <img src={props.socialIcon} alt="" />
         </div>
         <div>
           <p className="text-sm text-gray-500">{props.socialMedia}</p>
@@ -50,8 +51,8 @@ const ConnectWithUs = function () {
       <div className="container mx-auto max-w-5xl relative z-10">
         <div className="grid md:grid-cols-2 gap-12">
           <div className="p-8 bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-sm border border-gray-700">
-            <div className="mb-6 size-7 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full">
-              <img src={shield} alt="chat logo" />
+            <div className="mb-6 size-7 rounded-full">
+              <img src={techSphereLogo} alt="chat logo" />
             </div>
 
             <h2 className="text-2xl font-bold text-white mb-6">
@@ -75,8 +76,8 @@ const ConnectWithUs = function () {
           </div>
 
           <div className="p-8 bg-gradient-to-b from-gray-800 to-gray-900 rounded-xl shadow-sm border border-gray-700">
-            <div className="mb-6 size-7 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full">
-              <img src={shield} alt="chat logo" />
+            <div className="mb-6 size-7 rounded-full">
+              <img src={techSphereLogo} alt="chat logo" />
             </div>
 
             <h2 className="text-2xl font-bold text-white mb-6">
@@ -105,12 +106,8 @@ const ConnectWithUs = function () {
                   />
                 </div>
                 <div className="flex items-center p-4 bg-gray-800/50 rounded-lg border border-gray-700 hover:bg-gray-800 hover:border-blue-500 group transition-all mb-4 ">
-                  <input
-                    type="textarea"
-                    placeholder="Type your message"
-                    className="w-full text-gray-400 outline-0 text-wrap"
-                    required
-                  />
+                  <textarea name="" id="" rows="5"
+                  className="w-full outline-none text-sm" placeholder="Type your message..."></textarea>
                 </div>
               </form>
             </div>
