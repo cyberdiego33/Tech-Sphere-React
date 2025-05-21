@@ -9,11 +9,16 @@ const OurMission = function () {
           </h2>
           <div class="space-y-6 text-white">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-              molestiae dolorem commodi ratione reiciendis. Aut inventore sit
-              rerum corrupti ratione repellat quisquam quis quaerat quibusdam
-              obcaecati, ea et dolores consequatur libero illo! Maiores neque
-              excepturi laborum corrupti distinctio eum voluptatum.
+              We transform your digital vision into reality through a
+              streamlined process. Starting with understanding your business
+              goals, we design and develop custom websites that look exceptional
+              and deliver results.
+              <br />
+              From startups building their first online presence to established
+              businesses seeking upgrades, we handle everything from concept to
+              deployment. Our collaborative approach keeps you involved at every
+              step, and when needed, we partner with specialists to ensure
+              comprehensive solutions that exceed expectations.
             </p>
           </div>
         </div>
@@ -21,11 +26,15 @@ const OurMission = function () {
           <h2 class="text-3xl font-bold text-white mb-6">Our Mission</h2>
           <div class="space-y-6 text-white">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-              molestiae dolorem commodi ratione reiciendis. Aut inventore sit
-              rerum corrupti ratione repellat quisquam quis quaerat quibusdam
-              obcaecati, ea et dolores consequatur libero illo! Maiores neque
-              excepturi laborum corrupti distinctio eum voluptatum.
+              We empower businesses by creating exceptional digital experiences
+              that boost online presence and drive growth. Our focus is helping
+              traders, entrepreneurs, and professionals establish strong,
+              credible web presences that attract customers and build trust.
+              <br />
+              Every business deserves a website that functions as a powerful
+              marketing tool. Through innovative design and strategic thinking,
+              we transform how clients connect with their audience online,
+              helping them achieve greater success in their markets.
             </p>
           </div>
         </div>
