@@ -4,7 +4,7 @@ import techSphereLogo from "../assets/images/logo-tech-sphere.png";
 function Header() {
   return (
     <>
-      <header>
+      <header className="fixed top-0 w-full z-50 shadow-md">
         <div className="navigation flex justify-between items-center p-3 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 border-b border-gray-800 shadow-lg backdrop-blur-sm md:px-6 relative">
           <div className="logo flex">
             <div className="size-8 mr-2">

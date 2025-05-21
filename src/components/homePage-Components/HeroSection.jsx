@@ -5,7 +5,7 @@ const HeroSection = function () {
     <>
       <section
         id="hero-section"
-        className="relative bg-gradient-to-r from-[#0f172a] via-[#312e81] to-[#0f172a]"
+        className="relative mt-[55px] bg-gradient-to-r from-[#0f172a] via-[#312e81] to-[#0f172a]"
       >
         <div
           id="bottom-glow"
