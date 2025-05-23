@@ -1,24 +1,37 @@
 import techSphereLogo from "../../assets/images/logo-tech-sphere.png";
-import { TfiEmail } from "react-icons/tfi";
+import { RiTwitterXFill } from "react-icons/ri";
+import { FaLinkedinIn } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
+import { FaWhatsapp } from "react-icons/fa";
 
 const SocialsApi = [
   {
     index: 1,
-    socialMedia: "Email Us At",
-    socialHandle: "techsphere@gmail.com",
-    socialIcon: TfiEmail,
+    socialMedia: "Contact Us At",
+    socialHandle: "tech sphere",
+    socialIcon: FaWhatsapp,
+    color: 'border-green-600'
   },
   {
     index: 2,
-    socialMedia: "Connect With Us At",
-    socialHandle: "techsphere@LinkedIn.com",
-    socialIcon: TfiEmail,
+    socialMedia: "Email Us At",
+    socialHandle: "techsphere@gmail.com",
+    socialIcon: SiGmail,
+    color: 'border-red-600'
   },
   {
     index: 3,
+    socialMedia: "Connect With Us At",
+    socialHandle: "techsphere@LinkedIn.com",
+    socialIcon: FaLinkedinIn,
+    color: 'border-blue-600'
+  },
+  {
+    index: 4,
     socialMedia: "Follow Us At",
     socialHandle: "techsphere@Twitter.com",
-    socialIcon: TfiEmail,
+    socialIcon: RiTwitterXFill,
+    color: 'border-black'
   },
 ];
 
@@ -26,8 +39,8 @@ const Socials = function (props) {
   return (
     <div className="space-y-6 mb-4">
       <div className="flex items-center p-4 bg-gray-800/50 rounded-lg border border-gray-700 hover:bg-gray-800 hover:border-blue-500 group transition-all">
-        <div className="p-3 size-4 rounded-full mr-4 bg-blue-600/20 group-hover:bg-blue-600/30 transition-colors">
-          <img src={props.socialIcon} alt="" />
+        <div className="p-3 size-4 rounded-full mr-4 bg-blue-600/20 group-hover:bg-blue-600/30 transition-colors grid place-content-center">
+          <props.socialIcon />
         </div>
         <div>
           <p className="text-sm text-gray-500">{props.socialMedia}</p>
