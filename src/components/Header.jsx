@@ -53,18 +53,18 @@ function Header() {
           id="menu"
           className="bg-gradient-to-br from-gray-800 to-gray-900 border-b border-gray-800 shadow-lg backdrop-blur-sm h-0 overflow-hidden"
         >
-          <ul className="space-y-2 *:text-gray-400 *:hover:text-white *:transition-colors mb-4 p-4 border-b border-gray-800">
-            <li>
-              <Link to={"/"}>Home</Link>
+          <ul className="space-y-2 *:text-gray-400 *:hover:text-white *:transition-colors mb-4 p-4 border-b border-gray-800 ">
+            <li onClick={openMobileNav}>
+              <Link className=" w-full block" to={"/"}>Home</Link>
             </li>
-            <li>
-              <Link to={"/about"}>About</Link>
+            <li onClick={openMobileNav}>
+              <Link className=" w-full block" to={"/about"}>About</Link>
             </li>
-            <li>
-              <Link to={"/contact"}>Contact</Link>
+            <li onClick={openMobileNav}>
+              <Link className=" w-full block" to={"/contact"}>Contact</Link>
             </li>
-            <li>
-              <Link href="#">Blog</Link>
+            <li onClick={openMobileNav}>
+              <Link className=" w-full block" href="#">Blog</Link>
             </li>
           </ul>
 
