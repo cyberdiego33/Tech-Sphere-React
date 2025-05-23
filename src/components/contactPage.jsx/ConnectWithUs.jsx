@@ -6,52 +6,58 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const SocialsApi = [
   {
+    socialName: "whatsApp",
     index: 1,
     socialMedia: "Contact Us At",
     socialHandle: "tech sphere",
     socialIcon: FaWhatsapp,
-    color: 'border-green-600'
+    socialLink: "https://wa.me/message/CX2EPOT54IM7E1",
   },
   {
+    socialName: "Gmail",
     index: 2,
     socialMedia: "Email Us At",
     socialHandle: "techsphere@gmail.com",
     socialIcon: SiGmail,
-    color: 'border-red-600'
+    socialLink: "https://wa.me/message/CX2EPOT54IM7E1",
   },
   {
+    socialName: "Linkedln",
     index: 3,
     socialMedia: "Connect With Us At",
     socialHandle: "techsphere@LinkedIn.com",
     socialIcon: FaLinkedinIn,
-    color: 'border-blue-600'
+    socialLink: "https://www.linkedin.com/in/goodluck-iwuji-260993346?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
+    socialName: "X",
     index: 4,
     socialMedia: "Follow Us At",
     socialHandle: "techsphere@Twitter.com",
     socialIcon: RiTwitterXFill,
-    color: 'border-black'
+    socialLink: "https://x.com/Good97660?t=_2lXDGVlEf1kjJRsvHLy-Q&s=09",
   },
 ];
 
 const Socials = function (props) {
   return (
     <div className="space-y-6 mb-4">
-      <div className="flex items-center p-4 bg-gray-800/50 rounded-lg border border-gray-700 hover:bg-gray-800 hover:border-blue-500 group transition-all">
-        <div className="p-3 size-4 rounded-full mr-4 bg-blue-600/20 group-hover:bg-blue-600/30 transition-colors grid place-content-center">
-          <props.socialIcon />
+      <a href={props.socialLink} target="_blank">
+        <div className="flex items-center p-4 bg-gray-800/50 rounded-lg border border-gray-700 hover:bg-gray-800 hover:border-blue-500 group transition-all">
+          <div className="p-3 size-4 rounded-full mr-4 bg-blue-600/20 group-hover:bg-blue-600/30 transition-colors grid place-content-center">
+            <props.socialIcon />
+          </div>
+          <div>
+            <p className="text-sm text-gray-500">{props.socialMedia}</p>
+            <a
+              className="text-gray-300 font-medium hover:text-blue-400 transition-colors"
+              href="#"
+            >
+              {props.socialHandle}
+            </a>
+          </div>
         </div>
-        <div>
-          <p className="text-sm text-gray-500">{props.socialMedia}</p>
-          <a
-            className="text-gray-300 font-medium hover:text-blue-400 transition-colors"
-            href="#"
-          >
-            {props.socialHandle}
-          </a>
-        </div>
-      </div>
+      </a>
     </div>
   );
 };
@@ -83,6 +89,7 @@ const ConnectWithUs = function () {
                   socialHandle={items.socialHandle}
                   index={items.index}
                   socialName={items.socialName}
+                  socialLink={items.socialLink}
                 />
               );
             })}
@@ -119,11 +126,19 @@ const ConnectWithUs = function () {
                   />
                 </div>
                 <div className="flex items-center p-4 bg-gray-800/50 rounded-lg border border-gray-700 hover:bg-gray-800 hover:border-blue-500 group transition-all mb-4 ">
-                  <textarea name="" id="" rows="5"
-                  className="w-full outline-none text-sm text-white" placeholder="Type your message..." required></textarea>
+                  <textarea
+                    name=""
+                    id=""
+                    rows="5"
+                    className="w-full outline-none text-sm text-white"
+                    placeholder="Type your message..."
+                    required
+                  ></textarea>
                 </div>
 
-                <button className="px-2 py-1 rounded-sm text-white cursor-pointer ml-auto block bg-gradient-to-r from-blue-600 to-purple-600">Submit</button>
+                <button className="px-2 py-1 rounded-sm text-white cursor-pointer ml-auto block bg-gradient-to-r from-blue-600 to-purple-600">
+                  Submit
+                </button>
               </form>
             </div>
           </div>
