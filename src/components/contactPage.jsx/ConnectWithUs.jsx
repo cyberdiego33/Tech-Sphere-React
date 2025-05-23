@@ -120,7 +120,7 @@ const ConnectWithUs = function () {
                 </div>
                 <div className="flex items-center p-4 bg-gray-800/50 rounded-lg border border-gray-700 hover:bg-gray-800 hover:border-blue-500 group transition-all mb-4 ">
                   <textarea name="" id="" rows="5"
-                  className="w-full outline-none text-sm text-white" placeholder="Type your message..."></textarea>
+                  className="w-full outline-none text-sm text-white" placeholder="Type your message..." required></textarea>
                 </div>
 
                 <button className="px-2 py-1 rounded-sm text-white cursor-pointer ml-auto block bg-gradient-to-r from-blue-600 to-purple-600">Submit</button>
