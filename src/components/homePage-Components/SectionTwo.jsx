@@ -100,7 +100,7 @@ const SectionTwo = function() {
                 <h2
                   className="text-xl text-white font-bold transition duration-300 group-hover:text-blue-600"
                 >
-                  NIN Verification
+                  NIMC Services
                 </h2>
                 <p className="my-4 text-gray-400">
                   Our secure verification tools help businesses and individuals
@@ -126,11 +126,10 @@ const SectionTwo = function() {
                 <h2
                   className="text-xl text-white font-bold transition duration-300 group-hover:text-blue-600"
                 >
-                  Web Development
+                  Computer Tutoring
                 </h2>
                 <p className="my-4 text-gray-400">
-                  Our secure verification tools help businesses and individuals
-                  validate identities with speed and reliability.
+                  We offer computer training and tutorials, from beginners through intermediate to advanced.
                 </p>
               </div>
             </div>
