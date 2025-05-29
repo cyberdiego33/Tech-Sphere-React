@@ -61,17 +61,19 @@ const RevealAnswer = function (event) {
   const clicked = event.currentTarget;
   const answer = clicked.nextElementSibling;
   const revealItems = document.querySelectorAll(".OnclickReveal");
-  revealItems.forEach(function (items) {
-    items.classList.add("h-0");
+
+  console.log(revealItems);
+  
+
+  revealItems.forEach(function (item) {
+    if (answer === item && item.classList.contains('h-0')){
+      item.classList.remove('h-0');
+    } 
+    else {
+      item.classList.add('h-0');
+    }
   });
 
-  if (answer && answer.classList.contains("OnclickReveal")) {
-    answer.classList.remove("h-0");
-    answer.classList.remove("OnclickReveal");
-  } else if (answer && !answer.classList.contains("OnclickReveal")){
-    answer.classList.add("h-0");
-    answer.classList.add("OnclickReveal");
-  }
 };
 
 const FAQ = function () {
@@ -80,7 +82,7 @@ const FAQ = function () {
       <div className="absolute top-40 right-0 size-70 bg-blue-600 rounded-full opacity-10 blur-3xl"></div>
       <div className="absolute bottom-20 left-0 size-70 bg-purple-600 rounded-full opacity-10 blur-3xl"></div>
 
-      <div className="grid gap-6 md:grid-cols-2 items-start relative">
+      <div  className="grid gap-6 md:grid-cols-2 items-start relative">
         {FAQApi.map(function (items) {
           return (
             <QuestionCard
