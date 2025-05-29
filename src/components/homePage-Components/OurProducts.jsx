@@ -3,8 +3,8 @@ import successQuote from "../../assets/images/section-2/success-quotes.jpg";
 const SliderAPI = [
   {
     position: 1,
-    service: "E-commerce Website",
-    description: "Build scalable and robust online store to sell your products."
+    service: "Business Websites",
+    description: "Showcasing your work with stunning and professional portfolio"
   },
   {
     position: 2,
@@ -18,28 +18,28 @@ const SliderAPI = [
   },
   {
     position: 4,
-    service: "Portfolio Websites",
-    description: "Showcasing your work with stunning and professional portfolio"
+    service: "E-commerce Website",
+    description: "Build scalable and robust online store to sell your products."
   },
   {
     position: 5,
-    service: "E-commerce Website",
-    description: "Build scalable and robust online store to sell your products"
+    service: "UI UX Design",
+    description: "Crafting user appealing interface and experience"
   },
   {
     position: 6,
-    service: "E-commerce Website",
-    description: "Build scalable and robust online store to sell your products"
+    service: "Computer Appreciation",
+    description: "Teaching beginners essential computer skills including MS Word, MS Excel, and foundational courses"
   },
   {
     position: 7,
-    service: "E-commerce Website",
-    description: "Build scalable and robust online store to sell your products"
+    service: "Web Development Tutoring",
+    description: "Personalized coaching to help you learn web development skills"
   },
   {
     position: 8,
-    service: "E-commerce Website",
-    description: "Build scalable and robust online store to sell your products"
+    service: "NIMC Services",
+    description: "We offer NIN registration, personalization, and verification for individuals. Get your NIN plastic card for international or business purpose"
   },
 ];
 

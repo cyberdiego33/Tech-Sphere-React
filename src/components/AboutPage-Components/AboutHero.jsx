@@ -9,7 +9,7 @@ const AboutHero = function() {
                     <h1 className="text-4xl sm:text-5xl font-bold leading-[3rem] sm:leading-[4rem]">Welcome to <span className="text-blue-500">Tech Sphere</span></h1>
 
                     <p className="my-5 text-xl">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta error ab id, dolorum nam cum corporis eaque labore numquam iure.
+                        Empowering your digital transformation with innovative web solutions, stunning designs, and comprehensive tech services. From concept to launch, we bring your vision to life
                     </p>
                 </div>
             </div>
