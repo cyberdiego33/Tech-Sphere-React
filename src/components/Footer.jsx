@@ -23,7 +23,7 @@ function Footer() {
           </div>
 
           <div className="max-w-[300px]">
-            <h3 class="text-lg font-semibold text-white relative">
+            <h3 className="text-lg font-semibold text-white relative">
               Quick Links
               <span className="absolute -bottom-1 left-0 w-12 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600"></span>
             </h3>

@@ -1,13 +1,13 @@
 const OurMission = function () {
   return (
-    <section class="py-16 bg-gray-900 relative">
-      <div class="absolute top-px inset-x-0 h-px bg-gradient-to-r from-transparent via-blue-700 to-transparent"></div>
-      <div class=" container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-start ">
-        <div class="bg-gray-800 rounded-xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-6">
+    <section className="py-16 bg-gray-900 relative">
+      <div className="absolute top-px inset-x-0 h-px bg-gradient-to-r from-transparent via-blue-700 to-transparent"></div>
+      <div className=" container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-start ">
+        <div className="bg-gray-800 rounded-xl p-8">
+          <h2 className="text-3xl font-bold text-white mb-6">
             How Tech Sphere Works
           </h2>
-          <div class="space-y-6 text-white">
+          <div className="space-y-6 text-white">
             <p>
               We transform your digital vision into reality through a
               streamlined process. Starting with understanding your business
@@ -22,9 +22,9 @@ const OurMission = function () {
             </p>
           </div>
         </div>
-        <div class="bg-gray-800 rounded-xl p-8">
-          <h2 class="text-3xl font-bold text-white mb-6">Our Mission</h2>
-          <div class="space-y-6 text-white">
+        <div className="bg-gray-800 rounded-xl p-8">
+          <h2 className="text-3xl font-bold text-white mb-6">Our Mission</h2>
+          <div className="space-y-6 text-white">
             <p>
               We empower businesses by creating exceptional digital experiences
               that boost online presence and drive growth. Our focus is helping

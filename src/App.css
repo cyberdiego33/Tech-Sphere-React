@@ -7,7 +7,7 @@
 
 :root {
   --width: 300px;
-  --height: 200px;
+  --height: 300px;
   --quantity: 8;
 }
 
@@ -32,6 +32,7 @@
   width: 100%;
   min-width: calc( var(--width) *  var(--quantity));
   position: relative;
+  height: var(--height);
 }
 
 .slider-cont .list-cont .items-cont {
@@ -47,7 +48,7 @@
 
 .slider-cont .list-cont .items-cont img {
   width: 100%;
-  height: var(--height);
+  height: 100%;
   object-fit: cover;
 }
 

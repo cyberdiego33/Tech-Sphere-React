@@ -3,6 +3,7 @@ import OurMission from "../components/AboutPage-Components/OurMission";
 import CreativeCrew from "../components/homePage-Components/creativeCrew";
 import ReadySection from "../components/AboutPage-Components/ReadySection";
 import FAQ from "../components/AboutPage-Components/FAQ";
+import OurServices from "../components/AboutPage-Components/ourServices";
 
 
 function AboutScreen() {
@@ -11,6 +12,7 @@ function AboutScreen() {
             <AboutHero />
             <OurMission />
             <CreativeCrew />
+            <OurServices />
             <ReadySection />
             <FAQ />
         </main>
