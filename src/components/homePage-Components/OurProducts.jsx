@@ -75,7 +75,7 @@ const OurProducts = function () {
 
 const SnapCard = function (props) {
   return (
-    <div className="h-[350px] w-[300px] shadow-xl bg-gray-800  rounded-2xl hover:-translate-y-2 hover:shadow-md hover:shadow-blue-600 active:-translate-y-2 active:shadow-md active:shadow-blue-600  transition-all group">
+    <div className="h-[350px] w-[300px] shadow-xl bg-gray-800  rounded-2xl hover:-translate-y-2 hover:shadow-md hover:shadow-blue-600 active:-translate-y-2 active:shadow-md active:shadow-blue-600  transition-all group snap-start flex-shrink-0">
       <div className="relative">
         <div className="h-[200px] relative">
           <img
@@ -99,7 +99,8 @@ const SnapSection = function () {
   return (
     <section className="py-16 bg-gray-950 relative">
       <div className="absolute h-px inset-x-0 top-0 bg-gradient-to-r from-transparent via-blue-600 to-transparent opacity-20"></div>
-      <div className="flex flex-wrap gap-6 justify-center">
+      {/* <div className="flex flex-wrap gap-6 justify-center"> */}
+      <div className="flex overflow-x-auto snap-x snap-proximity gap-4 px-4 scrollbar-hide">
         {SliderAPI.map(function (item, index) {
           return (
             <SnapCard
