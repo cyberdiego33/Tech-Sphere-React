@@ -73,5 +73,47 @@ const OurProducts = function () {
   );
 };
 
+const SnapCard = function (props) {
+  return (
+    <div className="h-[350px] w-[300px] shadow-xl bg-gray-800  rounded-2xl hover:-translate-y-2 hover:shadow-md hover:shadow-blue-600 active:-translate-y-2 active:shadow-md active:shadow-blue-600  transition-all group">
+      <div className="relative">
+        <div className="h-[200px] relative">
+          <img
+            className="rounded-t-xl size-full object-cover"
+            src={successQuote}
+            alt="image"
+          />
+        </div>
+        <div className="text-white p-3">
+          <h3 className="text-xl font-semibold my-2 text-purple-700">
+            {props.service}
+          </h3>
+          <p className="text-sm text-gray-300">{props.description}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const SnapSection = function () {
+  return (
+    <section className="py-16 bg-gray-950 relative">
+      <div className="absolute h-px inset-x-0 top-0 bg-gradient-to-r from-transparent via-blue-600 to-transparent opacity-20"></div>
+      <div className="flex flex-wrap gap-6 justify-center">
+        {SliderAPI.map(function (item, index) {
+          return (
+            <SnapCard
+              position={item.position}
+              service={item.service}
+              description={item.description}
+            />
+          );
+        })}
+      </div>
+    </section>
+  );
+};
+
+
 export default OurProducts;
-export {SliderAPI, SlidingCard};
+export {SliderAPI, SlidingCard, SnapSection};
