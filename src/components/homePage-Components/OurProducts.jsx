@@ -1,4 +1,7 @@
 import successQuote from "../../assets/images/section-2/success-quotes.jpg";
+import { useRef } from 'react';
+import { FaAngleDown } from "react-icons/fa6";
+import { CiCircleRemove } from "react-icons/ci";
 
 const SliderAPI = [
   {
@@ -96,11 +99,41 @@ const SnapCard = function (props) {
 };
 
 const SnapSection = function () {
+  const scrollRef = useRef(null);
+
+  const scrollLeft = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: -300, behavior: 'smooth' });
+    }
+  };
+
+  const scrollRight = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: 300, behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="py-16 bg-gray-950 relative">
-      <div className="absolute h-px inset-x-0 top-0 bg-gradient-to-r from-transparent via-blue-600 to-transparent opacity-20"></div>
-      {/* <div className="flex flex-wrap gap-6 justify-center"> */}
-      <div className="flex overflow-x-auto snap-x snap-proximity gap-4 px-4 scrollbar-hide">
+      <div className="absolute h-px inset-x-0 top-0 bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-20"></div>
+      
+      {/* Navigation Buttons */}
+      <button 
+        onClick={scrollLeft}
+        className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full shadow-lg transition-colors"
+      >
+        <FaAngleDown size={20} />
+      </button>
+      
+      <button 
+        onClick={scrollRight}
+        className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full shadow-lg transition-colors"
+      >
+        <CiCircleRemove size={20} />
+      </button>
+
+      <div 
+        ref={scrollRef} className="flex overflow-x-auto snap-x snap-proximity gap-4 px-4 scrollbar-hide">
         {SliderAPI.map(function (item, index) {
           return (
             <SnapCard
