@@ -1,7 +1,6 @@
 import successQuote from "../../assets/images/section-2/success-quotes.jpg";
 import { useRef } from "react";
-import { FaAngleDown } from "react-icons/fa6";
-import { CiCircleRemove } from "react-icons/ci";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 import BusinessWebsite from "../../assets/images/products-image/business-website.jpg";
 import LearningCoding from "../../assets/images/products-image/learning-codin.jpg";
@@ -118,14 +117,14 @@ const SnapSection = function () {
         onClick={scrollLeft}
         className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full shadow-lg transition-colors"
       >
-        <FaAngleDown size={20} />
+        <FaChevronLeft size={20} />
       </button>
 
       <button
         onClick={scrollRight}
         className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full shadow-lg transition-colors"
       >
-        <CiCircleRemove size={20} />
+        <FaChevronRight size={20} />
       </button>
 
       <div
