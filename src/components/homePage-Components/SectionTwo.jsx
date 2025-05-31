@@ -31,19 +31,19 @@ const SectionTwo = function () {
                 <ul className="flex flex-col h-full justify-between">
                   <div className="flex items-center space-x-3">
                     <div className="size-3 bg-blue-700 rounded-full"></div>
-                    <li className="font-semibold ">E-commerce Website</li>
+                    <li className="font-semibold ">Custom Website Development</li>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="size-3 bg-blue-700 rounded-full"></div>
-                    <li className="font-semibold ">E-commerce Website</li>
+                    <li className="font-semibold ">E-commerce Platforms</li>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="size-3 bg-blue-700 rounded-full"></div>
-                    <li className="font-semibold ">E-commerce Website</li>
+                    <li className="font-semibold ">Responsive Web Design</li>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="size-3 bg-blue-700 rounded-full"></div>
-                    <li className="font-semibold ">E-commerce Website</li>
+                    <li className="font-semibold ">Website Maintenance and Redesign</li>
                   </div>
                 </ul>
               </div>
@@ -69,19 +69,19 @@ const SectionTwo = function () {
                 <ul className="flex flex-col h-full justify-between">
                   <div className="flex items-center space-x-3">
                     <div className="size-3 bg-blue-700 rounded-full"></div>
-                    <li className="font-semibold ">E-commerce Website</li>
+                    <li className="font-semibold ">Logo & Brand Identity</li>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="size-3 bg-blue-700 rounded-full"></div>
-                    <li className="font-semibold ">E-commerce Website</li>
+                    <li className="font-semibold ">Marketing Flyers</li>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="size-3 bg-blue-700 rounded-full"></div>
-                    <li className="font-semibold ">E-commerce Website</li>
+                    <li className="font-semibold ">Social Media Graphics</li>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="size-3 bg-blue-700 rounded-full"></div>
-                    <li className="font-semibold ">E-commerce Website</li>
+                    <li className="font-semibold ">Print Design Materials</li>
                   </div>
                 </ul>
               </div>
@@ -108,19 +108,19 @@ const SectionTwo = function () {
                 <ul className="flex flex-col h-full justify-between">
                   <div className="flex items-center space-x-3">
                     <div className="size-3 bg-blue-700 rounded-full"></div>
-                    <li className="font-semibold ">E-commerce Website</li>
+                    <li className="font-semibold ">NIN Registratiion</li>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="size-3 bg-blue-700 rounded-full"></div>
-                    <li className="font-semibold ">E-commerce Website</li>
+                    <li className="font-semibold ">NIN Verification</li>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="size-3 bg-blue-700 rounded-full"></div>
-                    <li className="font-semibold ">E-commerce Website</li>
+                    <li className="font-semibold ">Plastic NIN Cards</li>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="size-3 bg-blue-700 rounded-full"></div>
-                    <li className="font-semibold ">E-commerce Website</li>
+                    <li className="font-semibold ">Document Processing</li>
                   </div>
                 </ul>
               </div>
@@ -147,19 +147,19 @@ const SectionTwo = function () {
                 <ul className="flex flex-col h-full justify-between">
                   <div className="flex items-center space-x-3">
                     <div className="size-3 bg-blue-700 rounded-full"></div>
-                    <li className="font-semibold ">E-commerce Website</li>
+                    <li className="font-semibold ">Basic Computer Skills</li>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="size-3 bg-blue-700 rounded-full"></div>
-                    <li className="font-semibold ">E-commerce Website</li>
+                    <li className="font-semibold ">Microsoft Office Suite</li>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="size-3 bg-blue-700 rounded-full"></div>
-                    <li className="font-semibold ">E-commerce Website</li>
+                    <li className="font-semibold ">Digital Literacy Trainging</li>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="size-3 bg-blue-700 rounded-full"></div>
-                    <li className="font-semibold ">E-commerce Website</li>
+                    <li className="font-semibold ">Web Development Training</li>
                   </div>
                 </ul>
               </div>
