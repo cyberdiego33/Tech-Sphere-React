@@ -1,5 +1,4 @@
 import { SliderAPI } from "../homePage-Components/OurProducts";
-import successQuote from "../../assets/images/section-2/success-quotes.jpg";
 
 const ServicesCard = function (props) {
   return (
@@ -8,7 +7,7 @@ const ServicesCard = function (props) {
         <div className="h-[200px] relative">
           <img
             className="rounded-t-xl size-full object-cover"
-            src={successQuote}
+            src={props.image}
             alt="image"
           />
         </div>
@@ -33,6 +32,7 @@ const OurServices = function () {
               position={item.position}
               service={item.service}
               description={item.description}
+              image={item.image}
             />
           );
         })}

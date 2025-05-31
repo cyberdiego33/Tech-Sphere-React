@@ -3,46 +3,63 @@ import { useRef } from 'react';
 import { FaAngleDown } from "react-icons/fa6";
 import { CiCircleRemove } from "react-icons/ci";
 
+import BusinessWebsite from "../../assets/images/products-image/business-website.jpg"
+import FlyerImage from "../../assets/images/products-image/flyer-image.jpg"
+import LearningCoding from "../../assets/images/products-image/learning-codin.jpg"
+import teachingBasics from "../../assets/images/products-image/teaching-basic-computer.jpg"
+import NINCard from "../../assets/images/products-image/NIN-card.jpg"
+import MobileApp from "../../assets/images/products-image/mobile-app.jpg"
+import FlyerHair from "../../assets/images/products-image/flyer-hair.jpg"
+import OnlineShopping from "../../assets/images/products-image/online-shopping.jpg"
+
 const SliderAPI = [
   {
     position: 1,
     service: "Business Websites",
-    description: "Showcasing your work with stunning and professional portfolio"
+    description: "Showcasing your work with stunning and professional portfolio",
+    image: BusinessWebsite
   },
   {
     position: 2,
     service: "Logo Design",
-    description: "Creating unique and memorable logos that represent your brand."
+    description: "Creating unique and memorable logos that represent your brand.",
+    image: FlyerHair
   },
   {
     position: 3,
     service: "Flyer Design",
-    description: "Designing eye-catching flyers for your marketing campaigns."
+    description: "Designing eye-catching flyers for your marketing campaigns.",
+    image: FlyerImage
   },
   {
     position: 4,
     service: "E-commerce Website",
-    description: "Build scalable and robust online store to sell your products."
+    description: "Build scalable and robust online store to sell your products.",
+    image: OnlineShopping
   },
   {
     position: 5,
     service: "UI UX Design",
-    description: "Crafting user appealing interface and experience"
+    description: "Crafting user appealing interface and experience",
+    image: MobileApp
   },
   {
     position: 6,
     service: "Computer Appreciation",
-    description: "Teaching beginners essential computer skills including MS Word, MS Excel, and foundational courses"
+    description: "Teaching beginners essential computer skills including MS Word, MS Excel, and foundational courses",
+    image: teachingBasics
   },
   {
     position: 7,
     service: "Web Development Tutoring",
-    description: "Personalized coaching to help you learn web development skills"
+    description: "Personalized coaching to help you learn web development skills",
+    image: LearningCoding
   },
   {
     position: 8,
     service: "NIMC Services",
-    description: "We offer NIN registration, personalization, and verification for individuals. Get your NIN plastic card for international or business purpose"
+    description: "We offer NIN registration, personalization, and verification for individuals. Get your NIN plastic card for international or business purpose",
+    image: NINCard
   },
 ];
 
@@ -68,7 +85,7 @@ const OurProducts = function () {
       <div className="slider-cont">
         <div className="list-cont">
           {SliderAPI.map(function (item, index) {
-            return <SlidingCard position={item.position} service={item.service} description={item.description} />;
+            return <SlidingCard position={item.position} service={item.service} description={item.description}  />;
           })}
         </div>
       </div>
@@ -83,7 +100,7 @@ const SnapCard = function (props) {
         <div className="h-[200px] relative">
           <img
             className="rounded-t-xl size-full object-cover"
-            src={successQuote}
+            src={props.image}
             alt="image"
           />
         </div>
@@ -140,6 +157,7 @@ const SnapSection = function () {
               position={item.position}
               service={item.service}
               description={item.description}
+              image={item.image}
             />
           );
         })}
