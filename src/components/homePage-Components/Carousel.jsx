@@ -1,75 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-
-import BusinessWebsite from "../../assets/images/products-image/business-website.jpg";
-import LearningCoding from "../../assets/images/products-image/learning-codin.jpg";
-import teachingBasics from "../../assets/images/products-image/teaching-basic-computer.jpg";
-import NINCard from "../../assets/images/products-image/NIN-card.jpg";
-import MobileApp from "../../assets/images/products-image/mobile-app.jpg";
-import FlyerHair from "../../assets/images/products-image/flyer-hair.jpg";
-import OnlineShopping from "../../assets/images/products-image/online-shopping.jpg";
-import techSphereLogo from "../../assets/images/products-image/techSphere-removed-bg.png";
-import RidanImage from "../../assets/images/products-image/ridan-image.jpg";
-
-const SliderAPI = [
-  {
-    position: 1,
-    service: "Business Websites",
-    description:
-      "Showcasing your work with stunning and professional portfolio",
-    image: BusinessWebsite,
-  },
-  {
-    position: 2,
-    service: "Logo Design",
-    description:
-      "Creating unique and memorable logos that represent your brand.",
-    image: techSphereLogo,
-  },
-  {
-    position: 3,
-    service: "Flyer Design",
-    description: "Designing eye-catching flyers for your marketing campaigns.",
-    image: FlyerHair,
-  },
-  {
-    position: 4,
-    service: "E-commerce Website",
-    description:
-      "Build scalable and robust online store to sell your products.",
-    image: RidanImage,
-  },
-  {
-    position: 5,
-    service: "UI UX Design",
-    description: "Crafting user appealing interface and experience",
-    image: MobileApp,
-  },
-  {
-    position: 6,
-    service: "Computer Appreciation",
-    description:
-      "Teaching beginners essential computer skills including MS Word, MS Excel, and foundational courses",
-    image: teachingBasics,
-  },
-  {
-    position: 7,
-    service: "Web Development Tutoring",
-    description:
-      "Personalized coaching to help you learn web development skills",
-    image: LearningCoding,
-  },
-  {
-    position: 8,
-    service: "NIMC Services",
-    description:
-      "We offer NIN registration, personalization, and verification for individuals. Get your NIN plastic card for international or business purpose",
-    image: NINCard,
-  },
-];
-
-
-
+import { SliderAPI } from './OurProducts';
 
 const SnapCard = function (props) {
   return (
@@ -319,4 +250,5 @@ const SnapSection = () => {
 
   return <ResponsiveCarousel SliderAPI={SliderAPI} />;
 };
-export { SliderAPI, SnapSection };
+
+export default SnapSection;

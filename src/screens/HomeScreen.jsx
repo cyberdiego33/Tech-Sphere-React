@@ -11,7 +11,6 @@ function HomeScreen() {
       <HeroSection />
       <SectionTwo />
       <SectionThree />
-      {/* <OurProducts /> */}
       <SnapSection />
       <CreativeCrew />
       <ReadySection />
