@@ -1,33 +1,35 @@
-import testedIcon from "../../assets/images/texted.png";
+import { FaCaretDown } from "react-icons/fa";
 
 const FAQApi = [
   {
     index: 1,
-    question: "How would I recieve a response",
-    answer: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                quo enim consectetur ipsam voluptas esse, doloribus consequuntur
-                quae dolorum aut.`,
+    question: "What kind of services do you offer?",
+    answer: "We offer a range of tech services including web development, UI/UX design, digital branding, and custom software solutions tailored to your business goals",
   },
   {
     index: 2,
-    question: "How would I recieve a response",
-    answer: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                quo enim consectetur ipsam voluptas esse, doloribus consequuntur
-                quae dolorum aut.`,
+    question: "How soon will I receive a response after contacting you?",
+    answer: "We typically respond within 24 hours. For urgent inquiries, you can mark your message as “Priority” and we’ll get back to you even faster.",
   },
   {
     index: 3,
-    question: "How would I recieve a response",
-    answer: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                quo enim consectetur ipsam voluptas esse, doloribus consequuntur
-                quae dolorum aut.`,
+    question: "Do you offer free consultations or trials?",
+    answer: "Yes! We offer a free 15-minute consultation to understand your needs and explore how we can help. It’s our way of ensuring we're the right fit for your project.",
   },
   {
     index: 4,
-    question: "How would I recieve a response",
-    answer: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                quo enim consectetur ipsam voluptas esse, doloribus consequuntur
-                quae dolorum aut.`,
+    question: "What if I encounter a technical issue?",
+    answer: "No worries — our support team is always ready to help. We offer ongoing maintenance and support packages to keep your systems running smoothly.",
+  },
+  {
+    index: 5,
+    question: "How do you handle my personal or project data?",
+    answer: "Your privacy and security are important to us. All data is handled with strict confidentiality, and we follow industry-standard security practices to protect your information.",
+  },
+  {
+    index: 6,
+    question: "Can I request custom solutions for my business needs?",
+    answer: "Absolutely! We specialize in creating tailored solutions. Whether you're a startup or an established brand, we’ll work closely with you to meet your unique requirements.",
   },
 ];
 
@@ -39,8 +41,8 @@ const QuestionCard = function (props) {
           className="flex items-center hover:cursor-pointer group"
           onClick={RevealAnswer}
         >
-          <div className="bg-blue-600/20 p-2 px-4 rounded-full mr-4 group-hover:bg-blue-600/30 group-hover:cursor-pointer hover:pointer transition-colors">
-            {props.index}
+          <div className="bg-blue-600/20 p-2 rounded-full mr-4 group-hover:bg-blue-600/30 group-hover:cursor-pointer hover:pointer transition-colors">
+            <FaCaretDown />
           </div>
           <h3 className="font-semibold text-white mb-2 group-hover:text-blue-400 group-hover:cursor-pointer transition-colors">
             {props.question}
