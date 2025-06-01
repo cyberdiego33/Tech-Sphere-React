@@ -75,7 +75,7 @@ const SnapCard = function (props) {
   return (
     <div className="h-[350px] w-[300px] shadow-xl bg-gray-800 rounded-2xl snap-start flex-shrink-0">
       <div className="relative">
-        <div className="h-[200px] relative bg-white rounded-t-2xl">
+        <div className="h-[200px] relative bg-black rounded-t-2xl">
           <img
             className="rounded-t-xl size-full object-cover"
             src={props.image}
