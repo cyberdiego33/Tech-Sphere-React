@@ -272,7 +272,7 @@ const ResponsiveCarousel = ({ SliderAPI }) => {
       </button>
 
       {/* Carousel Container */}
-      <div className="relative px-16"> {/* Add padding to hide partial cards */}
+      <div className="relative px-8 sm:px-16"> {/* Add padding to hide partial cards */}
         <div 
           ref={scrollRef}
           className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide gap-4"
