@@ -7,9 +7,9 @@ import teachingBasics from "../../assets/images/products-image/teaching-basic-co
 import NINCard from "../../assets/images/products-image/NIN-card.jpg";
 import MobileApp from "../../assets/images/products-image/mobile-app.jpg";
 import FlyerHair from "../../assets/images/products-image/flyer-hair.jpg";
-import OnlineShopping from "../../assets/images/products-image/online-shopping.jpg";
 import techSphereLogo from "../../assets/images/products-image/techSphere-removed-bg.png";
 import RidanImage from "../../assets/images/products-image/ridan-image.jpg";
+import LogoStarzBag from "../../assets/images/products-image/logo-starz-bag.jpg";
 
 const SliderAPI = [
   {
@@ -24,7 +24,7 @@ const SliderAPI = [
     service: "Logo Design",
     description:
       "Creating unique and memorable logos that represent your brand.",
-    image: techSphereLogo,
+    image: LogoStarzBag,
   },
   {
     position: 3,
